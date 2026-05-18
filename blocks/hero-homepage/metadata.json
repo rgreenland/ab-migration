@@ -1,0 +1,39 @@
+{
+  "variantName": "hero-homepage",
+  "baseBlock": "hero",
+  "version": "1.0.0",
+  "created": "2026-05-18T18:55:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.ambetterhealth.com/en/",
+    "originPage": "Ambetter Health homepage",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "spacious",
+    "purpose": "homepage-hero",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "heading + subheading + paragraph + CTA",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "homepage hero sections",
+      "landing pages with featured image",
+      "pages with brand-colored hero backgrounds"
+    ],
+    "notSuitableFor": [
+      "minimal text-only heroes",
+      "video background heroes",
+      "dark image overlay heroes"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/en/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-05-18T18:55:00.000Z"
+  }
+}

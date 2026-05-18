@@ -1,0 +1,39 @@
+{
+  "variantName": "cards-action",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-05-18T18:55:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.ambetterhealth.com/en/",
+    "originPage": "Ambetter Health homepage",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "compact",
+    "purpose": "action-cards",
+    "imagePattern": "icon"
+  },
+  "contentPattern": {
+    "structure": "icon + heading + CTA button",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "quick action cards with icons and CTAs",
+      "member service links",
+      "feature highlight cards without descriptions"
+    ],
+    "notSuitableFor": [
+      "cards with long descriptions",
+      "cards with large images",
+      "product listing cards"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/en/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-05-18T18:55:00.000Z"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "variantName": "columns-promo",
+  "baseBlock": "columns",
+  "version": "1.0.0",
+  "created": "2026-05-18T18:55:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.ambetterhealth.com/en/",
+    "originPage": "Ambetter Health homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "promotional-columns",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "text + image side-by-side",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "promotional content with illustration",
+      "text and image side-by-side layouts",
+      "feature sections with supporting imagery"
+    ],
+    "notSuitableFor": [
+      "multi-column text comparisons",
+      "image galleries",
+      "three or more columns"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/en/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-05-18T18:55:00.000Z"
+  }
+}

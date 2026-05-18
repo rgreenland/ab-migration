@@ -1,0 +1,16 @@
+{
+  "status": "success",
+  "url": "https://www.ambetterhealth.com/en/",
+  "path": "en",
+  "timestamp": "2026-05-18T19:17:29.974Z",
+  "title": "Ambetter Health | Affordable Health Insurance Plans",
+  "template": "homepage",
+  "blocks": [
+    "hero-homepage",
+    "cards-action",
+    "cards-program",
+    "columns-promo",
+    "columns-promo",
+    "columns-appbanner"
+  ]
+}

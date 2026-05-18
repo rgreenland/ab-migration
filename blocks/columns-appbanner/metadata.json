@@ -1,0 +1,39 @@
+{
+  "variantName": "columns-appbanner",
+  "baseBlock": "columns",
+  "version": "1.0.0",
+  "created": "2026-05-18T18:55:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.ambetterhealth.com/en/",
+    "originPage": "Ambetter Health homepage",
+    "blockPosition": "bottom"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "spacious",
+    "purpose": "app-promotion",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "image + heading + paragraphs + CTA",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "app download promotion sections",
+      "product showcase with screenshot and description",
+      "dark-background promotional columns with image"
+    ],
+    "notSuitableFor": [
+      "light-background columns",
+      "text-only columns",
+      "multi-column layouts without images"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/en/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-05-18T18:55:00.000Z"
+  }
+}

@@ -1,0 +1,362 @@
+{
+  "metadata": {
+    "projectType": "xwalk"
+  },
+  "templates": [
+    {
+      "name": "homepage",
+      "urls": ["https://www.ambetterhealth.com/en/"],
+      "description": "Main landing page with hero, featured content, and program highlights",
+      "blocks": [
+        {
+          "name": "hero-homepage",
+          "instances": [".background-color-box.raspberry-background.marginBottom > .aem-Grid > .imagewithtext"]
+        },
+        {
+          "name": "cards-action",
+          "instances": [".featurecards .cardWrapper.four.theme_.medicaidFeatureCards"]
+        },
+        {
+          "name": "cards-program",
+          "instances": [".background-color-box.light-gray-background:not(.rounded) > .aem-Grid > .columncontrol .shared-column-control > .equalHeight"]
+        },
+        {
+          "name": "columns-promo",
+          "instances": [".background-color-box.marginBottom > .aem-Grid > .backgroundcolorbox > .background-color-box.marginBottom > .aem-Grid > .columncontrol .shared-column-control"]
+        },
+        {
+          "name": "columns-appbanner",
+          "instances": [".imagewithtext .container-fluid.imagetext.raspberry-background"]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-hero",
+          "name": "Hero",
+          "selector": ".background-color-box.raspberry-background.marginBottom",
+          "style": "raspberry",
+          "blocks": ["hero-homepage"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-promo-banner",
+          "name": "Promo Banner",
+          "selector": ".background-color-box.light-gray-background.rounded.img-rounded",
+          "style": "grey-rounded",
+          "blocks": [],
+          "defaultContent": [".background-color-box.light-gray-background.rounded .richtext .clearfix p", ".background-color-box.light-gray-background.rounded .button .btn"]
+        },
+        {
+          "id": "section-feature-cards",
+          "name": "Feature Cards",
+          "selector": ".featurecards.aem-GridColumn",
+          "style": null,
+          "blocks": ["cards-action"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-programs-perks",
+          "name": "Programs and Perks",
+          "selector": ".background-color-box.light-gray-background:not(.rounded)",
+          "style": "grey",
+          "blocks": ["cards-program"],
+          "defaultContent": [".background-color-box.light-gray-background:not(.rounded) > .aem-Grid > .richtext h2"]
+        },
+        {
+          "id": "section-ichra",
+          "name": "ICHRA Coverage",
+          "selector": ".background-color-box.marginBottom > .aem-Grid > .backgroundcolorbox > .background-color-box.marginBottom",
+          "style": null,
+          "blocks": ["columns-promo"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-app-promo",
+          "name": "App Promotion",
+          "selector": ".imagewithtext .container-fluid.imagetext.raspberry-background",
+          "style": "raspberry",
+          "blocks": ["columns-appbanner"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-disclaimers",
+          "name": "Disclaimers",
+          "selector": ".background-color-box.gray-background",
+          "style": "grey",
+          "blocks": [],
+          "defaultContent": [".background-color-box.gray-background .richtext .clearfix p"]
+        }
+      ]
+    },
+    {
+      "name": "knowledge-center-article",
+      "urls": [
+        "https://www.ambetterhealth.com/en/knowledge-center/open-enrollment.html",
+        "https://www.ambetterhealth.com/en/knowledge-center/premium-tax-credit.html",
+        "https://www.ambetterhealth.com/en/knowledge-center/health-insurance-subsidy.html",
+        "https://www.ambetterhealth.com/en/knowledge-center/what-is-a-special-enrollment-period.html",
+        "https://www.ambetterhealth.com/en/knowledge-center/what-is-the-health-insurance-marketplace.html",
+        "https://www.ambetterhealth.com/en/knowledge-center/understanding-health-insurance-metal-levels.html",
+        "https://www.ambetterhealth.com/en/knowledge-center/what-is-network-in-health-insurance.html",
+        "https://www.ambetterhealth.com/en/knowledge-center/emergency-care-costs-and-coverage.html",
+        "https://www.ambetterhealth.com/en/knowledge-center/five-things-to-know-about-health-savings-accounts.html",
+        "https://www.ambetterhealth.com/en/knowledge-center/what-is-irs-form-1095-a.html",
+        "https://www.ambetterhealth.com/en/knowledge-center/what-is-form-8962.html",
+        "https://www.ambetterhealth.com/en/knowledge-center/how-to-cancel-your-health-insurance-plan.html",
+        "https://www.ambetterhealth.com/en/knowledge-center/glossary-health-insurance-terms.html",
+        "https://www.ambetterhealth.com/en/knowledge-center/tips-for-choosing-the-right-marketplace-insurance-plan.html",
+        "https://www.ambetterhealth.com/en/knowledge-center/switching-health-insurance.html",
+        "https://www.ambetterhealth.com/en/knowledge-center/Insurance-plans-for-pregnancy.html",
+        "https://www.ambetterhealth.com/en/knowledge-center/essential-health-benefits.html",
+        "https://www.ambetterhealth.com/en/knowledge-center/does-marketplace-insurance-cover-mammograms.html",
+        "https://www.ambetterhealth.com/en/knowledge-center/what-is-a-doula.html",
+        "https://www.ambetterhealth.com/en/knowledge-center/urgent-care-vs-emergency-room-guide.html",
+        "https://www.ambetterhealth.com/en/knowledge-center/understanding-health-insurance-premium.html",
+        "https://www.ambetterhealth.com/en/knowledge-center/copay-health-insurance.html",
+        "https://www.ambetterhealth.com/en/knowledge-center/health-insurance-deductible-tips.html",
+        "https://www.ambetterhealth.com/en/knowledge-center/health-insurance-out-of-pocket-maximum.html",
+        "https://www.ambetterhealth.com/en/knowledge-center/overview-of-qualifying-life-events-and-insurance-enrollment.html",
+        "https://www.ambetterhealth.com/en/knowledge-center/qualifying-life-events-turning-twenty-six.html",
+        "https://www.ambetterhealth.com/en/knowledge-center/qualifying-life-events-relocation.html",
+        "https://www.ambetterhealth.com/en/knowledge-center/how-does-coinsurance-work.html",
+        "https://www.ambetterhealth.com/en/knowledge-center/high-deductible-health-plan-guide.html",
+        "https://www.ambetterhealth.com/en/knowledge-center/types-of-health-insurance-options.html",
+        "https://www.ambetterhealth.com/en/knowledge-center/exploring-cobra-alternative-coverage-options.html",
+        "https://www.ambetterhealth.com/en/knowledge-center/short-term-medical-insurance.html",
+        "https://www.ambetterhealth.com/en/knowledge-center/Health-Insurance-Options-for-the-Underinsured.html",
+        "https://www.ambetterhealth.com/en/knowledge-center/marketplace-dental-and-vision-coverage.html",
+        "https://www.ambetterhealth.com/en/knowledge-center/what-is-telehealth-coverage.html",
+        "https://www.ambetterhealth.com/en/knowledge-center/self-employed-health-insurance-options.html",
+        "https://www.ambetterhealth.com/en/knowledge-center/health-insurance-single-adults-guide.html",
+        "https://www.ambetterhealth.com/en/knowledge-center/health-insurance-options-unemployed.html",
+        "https://www.ambetterhealth.com/en/knowledge-center/choosing-the-right-health-insurance-plan-for-diabetes-coverage.html",
+        "https://www.ambetterhealth.com/en/knowledge-center/affordable-diabetes-care.html",
+        "https://www.ambetterhealth.com/en/knowledge-center/does-insurance-cover-allergy-tests.html",
+        "https://www.ambetterhealth.com/en/knowledge-center/affordable-asthma-copd-insurance-plans.html",
+        "https://www.ambetterhealth.com/en/knowledge-center/managing-chronic-health-conditions-with-marketplace-insurance.html",
+        "https://www.ambetterhealth.com/en/knowledge-center/lower-cholesterol-and-blood-pressure-tips.html"
+      ],
+      "description": "Educational articles about health insurance topics, benefits, and enrollment guidance",
+      "blocks": []
+    },
+    {
+      "name": "health-plans",
+      "urls": [
+        "https://www.ambetterhealth.com/en/health-plans.html",
+        "https://www.ambetterhealth.com/en/health-plans/our-benefits.html",
+        "https://www.ambetterhealth.com/en/health-plans/our-benefits/nurse-line.html",
+        "https://www.ambetterhealth.com/en/health-plans/our-benefits/care-management.html",
+        "https://www.ambetterhealth.com/en/health-plans/our-benefits/health-management.html",
+        "https://www.ambetterhealth.com/en/health-plans/our-benefits/start-smart.html",
+        "https://www.ambetterhealth.com/en/health-plans/our-benefits/ambetter-telehealth.html",
+        "https://www.ambetterhealth.com/en/health-plans/our-benefits/vision-and-dental.html",
+        "https://www.ambetterhealth.com/en/health-plans/my-health-pays.html",
+        "https://www.ambetterhealth.com/en/health-plans/ways-to-save.html",
+        "https://www.ambetterhealth.com/en/health-plans/ways-to-save/premium-tax-credits.html",
+        "https://www.ambetterhealth.com/en/health-plans/ways-to-save/financial-assistance.html",
+        "https://www.ambetterhealth.com/en/health-plans/ways-to-save/other-ways-to-save.html",
+        "https://www.ambetterhealth.com/en/health-plans/what-is-ambetter.html",
+        "https://www.ambetterhealth.com/en/health-plans/plan-options.html",
+        "https://www.ambetterhealth.com/en/health-plans/get-ready-now.html",
+        "https://www.ambetterhealth.com/en/health-plans/special-enrollment.html",
+        "https://www.ambetterhealth.com/en/health-plans/diabetes-coverage.html",
+        "https://www.ambetterhealth.com/en/health-plans/asthma-copd-coverage.html"
+      ],
+      "description": "Health plan information pages including benefits, savings options, and plan details",
+      "blocks": []
+    },
+    {
+      "name": "programs-savings",
+      "urls": [
+        "https://www.ambetterhealth.com/en/programs-savings.html",
+        "https://www.ambetterhealth.com/en/programs-savings/health-management.html",
+        "https://www.ambetterhealth.com/en/programs-savings/nurse-line.html",
+        "https://www.ambetterhealth.com/en/programs-savings/care-management.html",
+        "https://www.ambetterhealth.com/en/programs-savings/start-smart.html",
+        "https://www.ambetterhealth.com/en/programs-savings/vision-and-dental.html",
+        "https://www.ambetterhealth.com/en/programs-savings/ambetter-telehealth.html",
+        "https://www.ambetterhealth.com/en/programs-savings/my-health-pays.html",
+        "https://www.ambetterhealth.com/en/programs-savings/mental-behavioral-health-services-support.html",
+        "https://www.ambetterhealth.com/en/programs-savings/ambetter-perks.html"
+      ],
+      "description": "Programs, perks, and savings options available to Ambetter members",
+      "blocks": []
+    },
+    {
+      "name": "benefits-services",
+      "urls": [
+        "https://www.ambetterhealth.com/en/benefits-services.html",
+        "https://www.ambetterhealth.com/en/benefits-services/wellness-programs.html",
+        "https://www.ambetterhealth.com/en/benefits-services/health-benefits.html",
+        "https://www.ambetterhealth.com/en/benefits-services/pharmacy-program.html",
+        "https://www.ambetterhealth.com/en/benefits-services/nurse-line.html",
+        "https://www.ambetterhealth.com/en/benefits-services/care-management.html",
+        "https://www.ambetterhealth.com/en/benefits-services/health-management.html",
+        "https://www.ambetterhealth.com/en/benefits-services/start-smart.html",
+        "https://www.ambetterhealth.com/en/benefits-services/ambetter-telehealth.html"
+      ],
+      "description": "Member benefits and services including wellness programs, pharmacy, and telehealth",
+      "blocks": []
+    },
+    {
+      "name": "resources",
+      "urls": [
+        "https://www.ambetterhealth.com/en/resources.html",
+        "https://www.ambetterhealth.com/en/resources/pay-now.html",
+        "https://www.ambetterhealth.com/en/resources/find-a-doctor.html",
+        "https://www.ambetterhealth.com/en/resources/paying-my-bill.html",
+        "https://www.ambetterhealth.com/en/resources/new-members.html",
+        "https://www.ambetterhealth.com/en/resources/new-members/get-started.html",
+        "https://www.ambetterhealth.com/en/resources/new-members/use-your-benefits.html",
+        "https://www.ambetterhealth.com/en/resources/new-members/frequently-asked-questions.html",
+        "https://www.ambetterhealth.com/en/resources/better-health-center.html",
+        "https://www.ambetterhealth.com/en/resources/member-news.html",
+        "https://www.ambetterhealth.com/en/resources/video-library.html",
+        "https://www.ambetterhealth.com/en/resources/renewal-information.html",
+        "https://www.ambetterhealth.com/en/resources/mobile-app.html",
+        "https://www.ambetterhealth.com/en/resources/premier.html",
+        "https://www.ambetterhealth.com/en/resources/programs-perks.html",
+        "https://www.ambetterhealth.com/en/resources/interoperability-and-patient-access.html"
+      ],
+      "description": "Member resources including billing, new member guides, and tools",
+      "blocks": []
+    },
+    {
+      "name": "join-ambetter",
+      "urls": [
+        "https://www.ambetterhealth.com/en/join-ambetter.html",
+        "https://www.ambetterhealth.com/en/join-ambetter/become-a-member.html",
+        "https://www.ambetterhealth.com/en/join-ambetter/become-a-member/enrollment-checklist.html",
+        "https://www.ambetterhealth.com/en/join-ambetter/become-a-member/get-coverage.html",
+        "https://www.ambetterhealth.com/en/join-ambetter/become-a-member/special-enrollment.html",
+        "https://www.ambetterhealth.com/en/join-ambetter/become-a-member/what-to-expect.html",
+        "https://www.ambetterhealth.com/en/join-ambetter/become-a-member/how-to-enroll.html",
+        "https://www.ambetterhealth.com/en/join-ambetter/become-a-provider.html",
+        "https://www.ambetterhealth.com/en/join-ambetter/become-a-broker.html"
+      ],
+      "description": "Enrollment and onboarding pages for new members, providers, and brokers",
+      "blocks": []
+    },
+    {
+      "name": "ichra",
+      "urls": [
+        "https://www.ambetterhealth.com/en/ichra.html",
+        "https://www.ambetterhealth.com/en/ichra/why-ichra.html",
+        "https://www.ambetterhealth.com/en/ichra/why-ichra/faqs.html",
+        "https://www.ambetterhealth.com/en/ichra/why-ichra/webinars.html",
+        "https://www.ambetterhealth.com/en/ichra/why-ichra/about-ambetter-health.html",
+        "https://www.ambetterhealth.com/en/ichra/why-ichra/trends-case-studies.html",
+        "https://www.ambetterhealth.com/en/ichra/employers.html",
+        "https://www.ambetterhealth.com/en/ichra/employers/finding-the-right-platform.html",
+        "https://www.ambetterhealth.com/en/ichra/employers/ambetter-and-ichra.html",
+        "https://www.ambetterhealth.com/en/ichra/employers/ambetter-and-ichra/network.html",
+        "https://www.ambetterhealth.com/en/ichra/employers/ambetter-and-ichra/plans.html",
+        "https://www.ambetterhealth.com/en/ichra/employers/introducing-ichras-to-employees.html",
+        "https://www.ambetterhealth.com/en/ichra/employers/when-to-consider-ichra.html",
+        "https://www.ambetterhealth.com/en/ichra/employers/when-to-consider-ichra/what-makes-ichras-different.html",
+        "https://www.ambetterhealth.com/en/ichra/employers/when-to-consider-ichra/how-ichras-work.html",
+        "https://www.ambetterhealth.com/en/ichra/employers/when-to-consider-ichra/can-employees-handle-choosing-their-own-health-plan.html",
+        "https://www.ambetterhealth.com/en/ichra/employers/when-to-consider-ichra/implementation-timeline-and-where-to-start.html",
+        "https://www.ambetterhealth.com/en/ichra/employers/implementing-an-ichra.html",
+        "https://www.ambetterhealth.com/en/ichra/contact.html",
+        "https://www.ambetterhealth.com/en/ichra/brokers.html",
+        "https://www.ambetterhealth.com/en/ichra/brokers/ambetter-and-ichra.html",
+        "https://www.ambetterhealth.com/en/ichra/brokers/ambetter-and-ichra/network.html",
+        "https://www.ambetterhealth.com/en/ichra/brokers/ambetter-and-ichra/plans.html",
+        "https://www.ambetterhealth.com/en/ichra/brokers/choosing-an-ichra-benefit-platform.html",
+        "https://www.ambetterhealth.com/en/ichra/brokers/when-ichras-make-sense-for-clients.html",
+        "https://www.ambetterhealth.com/en/ichra/brokers/whats-different-for-brokers-and-how-ichras-work.html",
+        "https://www.ambetterhealth.com/en/ichra/brokers/why-ichras-make-sense-for-brokers.html",
+        "https://www.ambetterhealth.com/en/ichra/employees.html",
+        "https://www.ambetterhealth.com/en/ichra/employees/why-ichras-are-good-for-employees.html",
+        "https://www.ambetterhealth.com/en/ichra/employees/how-it-works-and-what-to-expect.html",
+        "https://www.ambetterhealth.com/en/ichra/employees/top-things-to-consider-when-picking-a-plan.html",
+        "https://www.ambetterhealth.com/en/ichra/employees/why-ambetter-health.html",
+        "https://www.ambetterhealth.com/en/ichra/employees/why-ambetter-health/virtual-benefits-fair.html",
+        "https://www.ambetterhealth.com/en/ichra/employees/why-ambetter-health/our-plans.html",
+        "https://www.ambetterhealth.com/en/ichra/employees/handbooks-forms.html",
+        "https://www.ambetterhealth.com/en/ichra/employees/pharmacy-resources.html",
+        "https://www.ambetterhealth.com/en/ichra/employees/pharmacy-resources/prescription-home-delivery.html",
+        "https://www.ambetterhealth.com/en/ichra/employees/pharmacy-resources/acariahealth.html",
+        "https://www.ambetterhealth.com/en/ichra/employees/pharmacy-resources/clinical-payment-policies.html"
+      ],
+      "description": "Individual Coverage Health Reimbursement Arrangement pages for employers, brokers, and employees",
+      "blocks": []
+    },
+    {
+      "name": "provider-resources",
+      "urls": [
+        "https://www.ambetterhealth.com/en/provider-resources.html",
+        "https://www.ambetterhealth.com/en/provider-resources/provider-news.html",
+        "https://www.ambetterhealth.com/en/provider-resources/provider-scorecard.html",
+        "https://www.ambetterhealth.com/en/provider-resources/join-provider-network.html",
+        "https://www.ambetterhealth.com/en/provider-resources/health-solutions.html"
+      ],
+      "description": "Resources and tools for healthcare providers in the Ambetter network",
+      "blocks": []
+    },
+    {
+      "name": "brokers",
+      "urls": [
+        "https://www.ambetterhealth.com/en/brokers.html",
+        "https://www.ambetterhealth.com/en/brokers/broker-portal.html",
+        "https://www.ambetterhealth.com/en/brokers/broker-contact.html",
+        "https://www.ambetterhealth.com/en/brokers/enroll-a-client.html"
+      ],
+      "description": "Broker resources including portal access, contact info, and client enrollment",
+      "blocks": []
+    },
+    {
+      "name": "info-page",
+      "urls": [
+        "https://www.ambetterhealth.com/en/about-us.html",
+        "https://www.ambetterhealth.com/en/about-us/centene.html",
+        "https://www.ambetterhealth.com/en/contact-us.html",
+        "https://www.ambetterhealth.com/en/newsroom.html",
+        "https://www.ambetterhealth.com/en/newsroom/expanded-healthcare-offering.html",
+        "https://www.ambetterhealth.com/en/newsroom/centene-corporation-names-first-president-over-ichra.html",
+        "https://www.ambetterhealth.com/en/find-a-provider.html",
+        "https://www.ambetterhealth.com/en/find-a-provider/provider-network-design.html",
+        "https://www.ambetterhealth.com/en/find-a-provider/find-a-provider-guide.html",
+        "https://www.ambetterhealth.com/en/knowledge-center.html",
+        "https://www.ambetterhealth.com/en/need-help.html",
+        "https://www.ambetterhealth.com/en/need-help/help-center.html",
+        "https://www.ambetterhealth.com/en/need-help/health-insurance-basics.html",
+        "https://www.ambetterhealth.com/en/open-enrollment.html",
+        "https://www.ambetterhealth.com/en/special-enrollment-period.html",
+        "https://www.ambetterhealth.com/en/navigating-coronavirus.html",
+        "https://www.ambetterhealth.com/en/telehealth-virtual-providers.html",
+        "https://www.ambetterhealth.com/en/durable-medical-equipment-providers.html"
+      ],
+      "description": "General informational pages including about, contact, news, help center, and enrollment periods",
+      "blocks": []
+    },
+    {
+      "name": "legal",
+      "urls": [
+        "https://www.ambetterhealth.com/en/language-assistance.html",
+        "https://www.ambetterhealth.com/en/privacy-policy.html",
+        "https://www.ambetterhealth.com/en/terms-conditions.html",
+        "https://www.ambetterhealth.com/en/non-discrimination-notice.html",
+        "https://www.ambetterhealth.com/en/market-notice.html",
+        "https://www.ambetterhealth.com/en/transparency-notice.html",
+        "https://www.ambetterhealth.com/en/disclaimers.html",
+        "https://www.ambetterhealth.com/en/json-file-directory.html"
+      ],
+      "description": "Legal notices, privacy policies, terms, and compliance pages",
+      "blocks": []
+    },
+    {
+      "name": "learn-more",
+      "urls": [
+        "https://www.ambetterhealth.com/en/learn-more.html",
+        "https://www.ambetterhealth.com/en/learn-more/marketplace.html",
+        "https://www.ambetterhealth.com/en/learn-more/healthcare-savings.html",
+        "https://www.ambetterhealth.com/en/learn-more/words-to-know.html",
+        "https://www.ambetterhealth.com/en/learn-more/faq.html"
+      ],
+      "description": "Educational landing pages about marketplace, savings, terminology, and FAQs",
+      "blocks": []
+    }
+  ]
+}

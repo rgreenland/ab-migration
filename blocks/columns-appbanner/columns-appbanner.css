@@ -1,0 +1,63 @@
+.columns-appbanner-container {
+  background-color: var(--color-raspberry);
+}
+
+.columns-appbanner-container .columns-appbanner-wrapper {
+  max-width: unset;
+  padding: 0;
+}
+
+.columns-appbanner > div {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-l);
+  align-items: center;
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+  padding: var(--spacing-xl) var(--spacing-m);
+}
+
+.columns-appbanner > div > div:first-child img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.columns-appbanner > div > div:last-child h2 {
+  font-family: var(--heading-slab-font-family);
+  font-size: var(--heading-font-size-xl);
+  color: var(--color-white);
+  margin-top: 0;
+}
+
+.columns-appbanner > div > div:last-child p {
+  color: var(--color-white);
+  font-size: var(--body-font-size-l);
+  line-height: 1.5;
+}
+
+.columns-appbanner > div > div:last-child a.button:any-link {
+  background-color: var(--color-yellow);
+  border-color: var(--color-yellow);
+  color: var(--color-text-dark);
+  font-weight: 500;
+  font-size: var(--body-font-size-l);
+  padding: 12px 40px;
+}
+
+.columns-appbanner > div > div:last-child a.button:hover {
+  background-color: var(--color-yellow-dark);
+  border-color: var(--color-yellow-dark);
+}
+
+@media (width >= 900px) {
+  .columns-appbanner > div {
+    flex-direction: row;
+    padding: var(--spacing-xxl) var(--spacing-l);
+  }
+
+  .columns-appbanner > div > div {
+    flex: 1;
+  }
+}

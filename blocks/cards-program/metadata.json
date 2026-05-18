@@ -1,0 +1,39 @@
+{
+  "variantName": "cards-program",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-05-18T18:55:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.ambetterhealth.com/en/",
+    "originPage": "Ambetter Health homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "minimal",
+    "purpose": "program-cards",
+    "imagePattern": "icon"
+  },
+  "contentPattern": {
+    "structure": "icon + heading + description + CTA button",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "program or perks feature cards",
+      "service description cards with icons",
+      "benefit cards with descriptions and CTAs"
+    ],
+    "notSuitableFor": [
+      "cards without descriptions",
+      "cards with large photo images",
+      "product grid cards"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/en/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-05-18T18:55:00.000Z"
+  }
+}
