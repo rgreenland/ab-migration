@@ -1,5 +1,6 @@
 .accordion details {
   border: 1px solid #dadada;
+  margin: 0px;
 }
 
 /* stylelint-disable-next-line no-descending-specificity */
