@@ -2,6 +2,17 @@
   "mappings": [
     "/content/ab-migration/:/",
     "/content/ab-migration/metadata:/metadata.json",
-    "/content/ab-migration/configuration:/.helix/config.json"
+    "/content/ab-migration/configuration:/.helix/config.json",
+
+    "/content/my/:/my/",
+    "/content/my/metadata:/metadata.json",
+    "/content/my/configuration:/.helix/config.json"
+    
+  ],  
+  "includes": [
+    "/content/ab-migration/",
+    "/content/my/"
   ]
+}
+
 }
